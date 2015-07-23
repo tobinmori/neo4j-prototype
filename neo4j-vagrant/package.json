@@ -1,0 +1,29 @@
+{
+  "name": "vagrant-neo4j",
+  "version": "0.0.1",
+  "author": {
+    "name": "Bret Copeland",
+    "email": "bret@atlantisflight.org"
+  },
+  "description": "A simple Vagrant script for setting up a Neo4j VM.",
+  "scripts": {
+    "start": "vagrant up",
+    "stop": "vagrant destroy -f"
+  },
+  "keywords": [
+    "neo4j",
+    "vagrant",
+    "virtualbox",
+    "vm"
+  ],
+  "analyze": false,
+  "license": "MIT",
+  "readme": "# Vagrant Neo4j\r\n\r\nA [vagrant](http://vagrantup.com) configuration to run Neo4j in a VirtualBox.\r\n\r\nThe setup script is a simple bash shell script (no chef/puppet/etc). I wanted a simple, lightweight, and standalone script to build my environment, but it may not be appropriate for everyone's needs.\r\n\r\n## Installs\r\n\r\nRunning `vagrant up` will download and install:\r\n\r\n* Ubuntu 12.04 LTS (Base Box) `precise64 http://files.vagrantup.com/precise64.box`\r\n\r\n* [Oracle Java](http://www.java.com/) JRE `1.7.0u45`\r\n> By downloading Java you acknowledge that you have read and accepted the terms of the [end user license agreement](http://www.oracle.com/technetwork/java/javase/terms/license/)\r\n\r\n* [Neo4j](http://www.neo4j.org/) Community Edition `2.0.0-M06`\r\n> (A)GPLv3 License<br>\r\n> Port 7474 is forwarded from the host to the guest for accessing Neo4j from the host machine.\r\n\r\n## Requirements\r\n\r\n* [VirtualBox](https://www.virtualbox.org/) (version 4.2 or later)\r\n* [Vagrant](http://www.vagrantup.com/)\r\n\r\n## npm\r\n\r\nIf you would prefer to install using npm:\r\n\r\n```\r\nnpm install vagrant-neo4j\r\n```\r\n\r\nThe above [requirements](#requirements) still must be installed separately. \r\n\r\n`npm start` and `npm stop` are aliases of `vagrant up` and `vagrant destroy -f` respectively. Though, this is true whether installed via npm or not.\r\n\r\n## Windows 8.1\r\n\r\nIf you are using Windows 8.1, make sure to you are using [VirtualBox 4.3.2](https://www.virtualbox.org/wiki/Downloads) or later. There were compatibility problems in older versions which caused BSOD.\r\n",
+  "readmeFilename": "README.md",
+  "_id": "vagrant-neo4j@0.0.1",
+  "dist": {
+    "shasum": "c2c6c3566ab0f54ffa8ad0bca5033b81d8c5060b"
+  },
+  "_from": "vagrant-neo4j@",
+  "_resolved": "https://registry.npmjs.org/vagrant-neo4j/-/vagrant-neo4j-0.0.1.tgz"
+}
